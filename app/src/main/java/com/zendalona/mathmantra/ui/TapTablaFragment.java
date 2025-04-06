@@ -95,7 +95,7 @@ public class TapTablaFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         if (tts != null) {
-            tts.shutdown();
+            tts.shutdown();  // Properly release TTS resources
         }
         // Release resources related to binding
         binding = null;
